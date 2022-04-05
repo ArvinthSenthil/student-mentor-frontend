@@ -12,13 +12,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Home from './home.js'
-import { styled, alpha } from '@mui/material/styles';
 import { Switch, Route,Redirect,useHistory} from "react-router-dom"
 import { StudentsList } from './students'
 import { Assignmentor } from './assignmentor'
 import { Addstudent } from './addstudent'
 import { Addmentor } from './addmentor'
 import {Changementor} from './changementorlist'
+import {MentorsList} from './mentor'
 import './App.css'
 import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
 const drawerWidth = 150;
@@ -78,46 +78,11 @@ export default function App() {
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
-  const Search = styled('div')(({ theme }) => ({
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
-      width: 'auto',
-    },
-  }));
   
-  const SearchIconWrapper = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }));
   
-  const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: 'inherit',
-    '& .MuiInputBase-input': {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create('width'),
-      width: '100%',
-      [theme.breakpoints.up('md')]: {
-        width: '20ch',
-      },
-    },
-  }));
-
+ 
+  
+ 
    const history = useHistory();
 
   return (
