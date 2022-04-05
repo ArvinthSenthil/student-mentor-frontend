@@ -36,11 +36,7 @@ export function Changementor() {
   useEffect(() => getStudents(), [])
   useEffect(() => getMentors(), [])
 
-  const deleteStudent = (id) => {
-    fetch(`${api}/students/${id}`, {
-      method: 'DELETE',
-    }).then(() => getStudents())
-  }
+
 
   const style = {
     

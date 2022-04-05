@@ -144,7 +144,7 @@ function Student({
   }
   const num = index + 1
 
-  const history = useHistory()
+
  
   return (
     <>

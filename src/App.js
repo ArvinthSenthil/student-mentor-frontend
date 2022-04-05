@@ -12,7 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Home from './home.js'
-import { Switch, Route,Redirect,useHistory} from "react-router-dom"
+import { Switch, Route,useHistory} from "react-router-dom"
 import { StudentsList } from './students'
 import { Assignmentor } from './assignmentor'
 import { Addstudent } from './addstudent'
